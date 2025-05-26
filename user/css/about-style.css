@@ -1,0 +1,182 @@
+/*Navbar*/
+.navbar {
+    background-color: #A4D1DB;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    font-family: 'Arial';
+    font-weight: 600;
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand a {
+    color: #A4D1DB;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+}
+.navbar-brand a img{
+    max-height: 4rem;
+    width: auto;
+}
+
+.navbar-links ul {
+    list-style-type: none;
+}
+
+.navbar-links ul li {
+    display: inline;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.navbar-links ul li a {
+    color:#49557B;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+.navbar-links ul li a:hover{
+    color:#1D7689;
+}
+.link-active a{
+    border-bottom:#1D7689 4px solid;
+}
+.logout-btn a{
+    color: white;
+    padding: 5px 30px;
+    background-color: #1D7689;
+    border-radius: 20px;
+}
+
+.content {
+    max-width: 960px;
+    margin: 60px auto 20px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+/*Page Content*/
+*{
+    margin: 0;
+}
+body{
+    background-color: gray;
+    background-image: url('../../img/background-image.png');
+    background-size: cover;
+    background-attachment: fixed; /* Ensure the background remains fixed */
+}
+.white-space{
+    height: 90px;
+    background-color: transparent;
+}
+.header-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: bold;
+    align-items: center;
+    margin-top: 50px;
+    font-size: 5rem;
+    font-family: 'Satisfy';
+    color: #4F5E7A;
+}
+.header img{
+    width: 250px;
+}
+
+.text-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    margin-top: 30px;
+    border-radius: 30px;
+    font-family: 'Arial';
+    padding: 20px 100px;
+}
+.text-container h1{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.text-container span{
+    font-size: 20px;
+}
+
+.about-container{
+    align-items: center;
+    font-family: 'Arial';
+}
+.doctor-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+}
+.team{
+    margin-top: 30px;
+    font-family: 'Satisfy';
+    font-size: 5rem;
+    color: #49557B;
+}
+.left-container{
+    padding: 50px;
+    background-color: white;
+    border-radius: 30px;
+}
+.left-container img{
+    height: 500px;
+}
+.right-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    margin-left: 50px;
+    font-size: 20px;
+}
+.appointment-btn{
+    margin-top: 20px;
+    background-color: #1D7689;
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.appointment-btn a{
+    text-decoration: none;
+    color: white;
+}
+.top-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    font-size: 30px;
+    font-family: 'Times New Roman';
+    font-weight: bold;
+    font-style: italic;
+    padding: 10px;
+}
+.bottom-container{
+    margin-top: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 10px;
+}

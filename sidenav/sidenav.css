@@ -1,0 +1,103 @@
+:root {
+    --div-primary-color: #1D7689;
+    --div-hover-color: #799AA2;
+}
+body{
+    font-family: sans-serif;
+}
+/* Toggle Button */
+.sidenav-toggle {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 99999;
+}
+
+/* SIDENAV */
+.sidenav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 250px;
+    background-color: var(--div-primary-color);
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 0;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+.sidenav.visible {
+    transform: translateX(0);
+}
+
+.top-sidenav {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.top-sidenav img {
+    width: 90%;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidenav a {
+    position: relative;
+    padding: 8px 8px 8px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
+
+.menu .active {
+    background-color: var(--div-hover-color);
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.sidenav a:hover {
+    background-color: var(--div-hover-color);
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.logout {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    margin-bottom: 30px;
+}
+
+/* END OF SIDENAV */
+
+.container {
+    margin-left: 0;
+    transition: margin-left 0.3s ease;
+}
+
+.container.shifted {
+    margin-left: 250px;
+}
